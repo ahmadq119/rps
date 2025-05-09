@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login : Siadil 25</title>
+    <link rel="icon" href="../img/logobulatbppmhkp.png" type="image/png">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+<body>
+    <div id="app">
+        <div id="main-wrapper" class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="card border-0">
+                        <div class="card-body p-0">
+                            <div class="row no-gutters">
+                                <div class="col-lg-6">
+                                    <div class="p-5">
+                                        <div class="mb-5">
+                                            <h3 class="h4 font-weight-bold text-theme">Login</h3>
+                                        </div>
+                                        <h6 class="h5 mb-0">Welcome back!</h6>
+                                        <p class="text-muted mt-2 mb-5">Enter your username and password to access.</p>
+                                        <form @submit.prevent="login">
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Username</label>
+                                                <input type="text" class="form-control" v-model="loginData.username"
+                                                    required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label">Password</label>
+                                                <input type="password" class="form-control" v-model="loginData.password"
+                                                    required>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary w-100">Login</button>
+                                        </form>
+                                        <div v-if="errorMessage" class="alert alert-danger mt-3">{{ errorMessage }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 d-none d-lg-inline-block">
+                                    <div class="account-block rounded-right">
+                                        <div class="overlay rounded-right"></div>
+                                        <div class="account-testimonial">
+                                            <h4 class="text-white mb-4">BPPMHKP Merauke</h4>
+                                            <p class="lead text-white">"Badan Pengendalian dan Pengawasan Mutu Hasil Kelautan dan Perikanan."</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end card-body -->
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- Row -->
+        </div>
+    </div>
+
+    <!-- Menggunakan CDN untuk Vue.js -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <!-- Menggunakan CDN untuk Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="apps.js"></script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+stdClass Object
+(
+    [request] => create
+    [ruangid] => 9
+    [nama_alat] => Oven
+    [tanggal] => 2025-02-11
+    [hasil_pengukuran] => 121
+    [nilai_set] => 120
+    [idpeg] => 2
+    [nama_pegawai] => Nina Destiana
+)
+stdClass Object
+(
+    [request] => create
+    [ruangid] => 9
+    [nama_alat] => Oven
+    [tanggal] => 2025-02-11
+    [hasil_pengukuran] => 120
+    [nilai_set] => 120
+    [idpeg] => 2
+    [nama_pegawai] => Nina Destiana
+)
+stdClass Object
+(
+    [request] => create
+    [ruangid] => 9
+    [nama_alat] => Oven
+    [tanggal] => 2025-02-12
+    [hasil_pengukuran] => 120
+    [nilai_set] => 120
+    [idpeg] => 1004
+    [nama_pegawai] => Laroji
+)

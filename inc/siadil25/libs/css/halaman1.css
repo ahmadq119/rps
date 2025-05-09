@@ -1,0 +1,80 @@
+body {
+    padding-top: 60px;
+    background-color: #f8f9fa;
+    font-size: small;
+}
+
+.warna-nav {
+    background: linear-gradient(90deg, midnightblue, royalblue);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    font-size: medium;
+    font-weight: bold;
+    color: gold;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.dropdown-menu .dropdown-item {
+    font-size: small;
+}
+
+.card {
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    font-size: small;
+}
+/*
+.card:hover {
+    transform: scale(1.03);
+}
+*/
+.accordion-button {
+    background-color: #e3f2fd;
+}
+
+.accordion-button:hover {
+    background-color: #bbdefb;
+}
+
+.table {
+    --bs-table-color: var(--bs-gray-600);
+    --bs-table-bg: var(--bs-gray-100);
+    --bs-table-border-color: transparent;
+    font-size: small;
+}
+
+.table-hover tbody tr:hover {
+    background-color: #e3f2fd;
+    font-size: small;
+}
+
+
+.list-group {
+    position: absolute;
+    z-index: 1000;
+    width: 50%;
+    font-size: small;
+}
+
+.modal {
+    font-size: small;
+}
+
+.logout-btn {
+    background: crimson;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s;
+    font-size: small;
+    font-weight: bold;
+}
+
+.logout-btn:hover {
+    background: darkred;
+}
